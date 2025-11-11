@@ -15,29 +15,19 @@
       min-height: 100vh;
     }
 
-    /* Liquid glass header style */
-    header {
-      text-align: center;
-      padding: 80px 20px;
-      background: rgba(255, 255, 255, 0.05);
+    header, section, footer {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px 25px;
+      background: rgba(255,255,255,0.05);
       backdrop-filter: blur(10px);
       border-radius: 20px;
-      margin: 40px auto;
-      max-width: 900px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.4);
     }
 
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      color: #fff;
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
-    }
-
-    header p {
-      font-size: 1.3em;
-      margin-bottom: 30px;
-    }
+    header { text-align: center; padding: 80px 20px; }
+    header h1 { font-size: 3em; margin-bottom: 20px; text-shadow: 1px 1px 6px rgba(0,0,0,0.5); }
+    header p { font-size: 1.3em; margin-bottom: 30px; }
 
     .btn {
       display: inline-block;
@@ -57,52 +47,47 @@
       transform: scale(1.05);
     }
 
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 50px 25px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-    }
-
     section h2 {
       font-size: 2.2em;
       margin-bottom: 20px;
       text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     }
 
-    section p {
+    section p, section ul {
       font-size: 1.1em;
       line-height: 1.6;
+      margin-bottom: 15px;
     }
 
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 20px;
-      margin: 40px auto;
-      max-width: 900px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-    }
+    section ul li { margin-left: 20px; }
 
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
+    footer { text-align: center; padding: 40px 20px; }
+    footer a { color: #fff; text-decoration: underline; }
 
-    /* Emojis highlight */
     .emoji { font-size: 1.2em; margin-right: 8px; }
+
+    /* Image placeholders */
+    .screenshot {
+      width: 100%;
+      max-width: 850px;
+      height: 300px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+      font-size: 1.5em;
+      margin: 20px 0;
+      border: 2px dashed rgba(255,255,255,0.3);
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>🌟 Welcome to Our Discord Community!</h1>
-  <p>🎮 Chat, 🤝 Connect, and 🌈 Have Fun with People Who Share Your Interests!</p>
-  <a class="btn" href="https://discord.gg/EycKmusR6v" target="_blank">🚀 Join Discord Now</a>
+  <p>🎮 Chat, 🤝 Connect, and Have Fun with People Who Share Your Interests!</p>
 </header>
 
 <section>
@@ -118,6 +103,14 @@
 </section>
 
 <section>
+  <h2>📸 Preview Our Community</h2>
+  <div class="screenshot">Screenshot of General Chat</div>
+  <div class="screenshot">Screenshot of Events & Announcements</div>
+  <div class="screenshot">Screenshot of Voice Channels</div>
+  <p>See how welcoming and active our community is! We have dedicated channels for everything you love. 🌟</p>
+</section>
+
+<section>
   <h2>📌 What You Can Do</h2>
   <p>Join discussions, share memes, attend community events, or participate in competitions. Our channels are organized so you always know where to go. You’ll never miss out on the fun! 🎉</p>
 </section>
@@ -129,8 +122,10 @@
 
 <section>
   <h2>🔥 How to Join</h2>
-  <p>Click the button below to enter our Discord server. Once inside, introduce yourself and start chatting! 🌟</p>
-  <p style="text-align:center;"><a class="btn" href="https://discord.gg/EycKmusR6v" target="_blank">🚀 Join Now!</a></p>
+  <p>After exploring our page and learning about the community, you can click the button below to join us on Discord! 🌟</p>
+  <p style="text-align:center;">
+    <a class="btn" href="https://discord.gg/EycKmusR6v" target="_blank">🚀 Join Now!</a>
+  </p>
 </section>
 
 <footer>
