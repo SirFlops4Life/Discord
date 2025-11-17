@@ -98,7 +98,7 @@ function initGame() {
   score = 0;
   keys = {};
   enemySpawnRate = 1000;
-  enemySpeedBase = 1.5;
+  enemySpeedBase = 0.1;
 
   clearInterval(gameInterval);
   gameInterval = setInterval(spawnEnemy, enemySpawnRate);
